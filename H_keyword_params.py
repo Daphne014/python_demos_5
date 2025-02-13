@@ -1,4 +1,5 @@
 def print_vat(**kwargs):
+   # ** attached to a parameter name means you can give the function a dictionary. * attached to a parameter is variadic, meaning it can be a list, tuple
    print(kwargs)
    net = kwargs['gross']/(1 + (kwargs['vatpc']/100))
    vat = kwargs['gross'] - net
@@ -11,4 +12,4 @@ print_vat(vatpc=15, gross=9.55, message='Summary')
 
 # define a dictionary with keys that match the expected keywords within the function
 argsdict = dict(vatpc=20, gross=15.99, message='Output')
-print_vat(**argsdict)
+print_vat(**argsdict) # ** unpack my dictionary

@@ -10,8 +10,8 @@ def subtract(number1, number2):
     return answer
 
 
-# variadic add function
-def add_many(*numbers):
+# variadic add function # the variable function that takes a number of arguments
+def add_many(*numbers):  # * means we can pass in lots of numbers
     answer = 0
     for number in numbers:
         answer += int(number)

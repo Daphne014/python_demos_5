@@ -1,5 +1,5 @@
 
-def print_vat(*, gross=0, vatpc=17.5, message='Summary:'):
+def print_vat( gross=0, vatpc=20, *, message='Summary:'): # it has default values as part of its parameters passed into it. Any parameter that follows  * must be named.
    net = gross/(1 + (vatpc/100))
    vat = gross - net
    print(message, 'Net: {0:5.2f} Vat: {1:5.2f}'.format(net, vat))

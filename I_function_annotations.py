@@ -24,7 +24,7 @@ def print_vat(**kwargs: 'VAT, gross and message'):
 
 # annotating return type
 # this function returns a tuple
-def do_magic(number1, number2) -> 'tuple':
+def do_magic(number1, number2) -> 'tuple':   # we can anotate with -> it does stuff with numbers and return a tuple
     number1_squared = number1 * number1
     number2_doubled = number2 * 2
     return number1_squared, number2_doubled

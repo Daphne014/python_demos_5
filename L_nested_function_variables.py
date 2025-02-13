@@ -6,7 +6,7 @@ def my_func():
     # new local variable that shadows the global 'result' variable
     result = 12
 
-    def scope_test():
+    def scope_test(): # a function within a function (reclusive)
         # non-local instructs python to use the enclosing variable (12) rather
         # than attempt to create a new variable within this local function
         nonlocal result

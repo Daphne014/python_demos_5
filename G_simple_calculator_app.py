@@ -31,7 +31,7 @@ print(add_a)
 
 nums = 20, 41, 9, 34, 1, 56, 8, 3
 # call the function and unpack the tuple
-add_b = add_many(*nums)
+add_b = add_many(*nums) # calling a function that was defined in f_arithmetic_functions, and unpacking it with a single *
 print(add_b)
 
 print(f"Value 1: {value1}, Value 2: {value2}")

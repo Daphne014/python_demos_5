@@ -1,8 +1,9 @@
 # lambda functions are anonymous short-hand functions
-
+# lambda is a short in-situ piece of logic that you can use instead of a function
+# if using a lambda in more than one place, use a function instead
 print("######## Example 1 ########")
-compare = lambda a, b: -1 if a < b else (+1 if a > b else 0)
-
+compare = lambda a, b: -1 if a < b else (+1 if a > b else 0) # return -1 if parameter of b is < a
+# else (+1 if a > b else 0) means if a > b, return +1  else 0. sorted  logics return +1 if they return early, otherwise -1
 x = 42
 y = 3
 
